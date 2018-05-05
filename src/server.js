@@ -94,11 +94,20 @@ server.get('/',(req,res) => {
  */
 server.post('/*',(req,res,next) => {
   /* detect session */
-  if(req.url == '/submit' || req.url == '/update') {
-    var updatedSession = Object.assign({},req.session.hCardProps,req.body);
-    req.session.hCardProps = updatedSession;
+  if(req.is('application/x-www-form-urlencoded')){
+    if(req.url == '/submit' || req.url == '/update') {
+      var updatedSession = Object.assign({},req.session.hCardProps,req.body);
+      req.session.hCardProps = updatedSession;
+    }
+    next();
+  } else {
+    const error = {
+      type: 'CONTENT-TYPE ERROR',
+      message: 'post request should set Content-Type to application/x-www-form-urlencoded'
+    }
+    res.status(500);
+    res.send(error);
   }
-  next();
 });
 
 // loading routes
