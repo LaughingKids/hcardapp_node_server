@@ -1,4 +1,4 @@
-# Node Js Server for HcardApp
+  # Node Js Server for HcardApp
 
 ## Background
 Implement a backend server with node js for HcardApp.
@@ -20,3 +20,7 @@ Implement a backend server with node js for HcardApp.
 ## Enviroment
 1. node js version: v9.3.0
 2. mongo db should be installed locally [port:27017 (default port)]
+
+## TODOs
+1. Field Validation Should be added
+2. For update user properly, should call update endpoint with user id
