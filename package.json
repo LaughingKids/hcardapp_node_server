@@ -1,0 +1,39 @@
+{
+  "name": "domain_tech_test",
+  "version": "1.0.0",
+  "description": "NodeJs Server for HcardApp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaughingKids/hcardapp_node_server.git"
+  },
+  "keywords": [
+    "NodeJs",
+    "Domain",
+    "React",
+    "Js"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.11.1",
+    "json-loader": "^0.5.4",
+    "webpack": "^3.8.1",
+    "webpack-node-externals": "^1.2.0"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "react": "15.5.0",
+    "react-dom": "15.5.0"
+  },
+  "author": "Thomas Xiaojie Wang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaughingKids/hcardapp_node_server/issues"
+  },
+  "homepage": "https://github.com/LaughingKids/hcardapp_node_server#readme"
+}
