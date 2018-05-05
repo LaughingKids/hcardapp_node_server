@@ -4,7 +4,9 @@
   "description": "NodeJs Server for HcardApp",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test"   : "echo \"Error: no test specified\" && exit 1",
+    "mongo"  : "node src/server 1",
+    "file"   : "node src/server 2"
   },
   "repository": {
     "type": "git",
