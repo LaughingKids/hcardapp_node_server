@@ -16,6 +16,7 @@ Implement a backend server with node js for HcardApp.
 2. mongod [start local mongo server, if want to save detail in mongo db]
 3. npm run file [store user profile into file]
 4. npm run mongo [store user profile into mongo db, local server]
+5. Server will running on http://localhost:3000
 
 ## Enviroment
 1. node js version: v9.3.0
